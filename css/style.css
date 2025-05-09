@@ -3,6 +3,18 @@ body{
     font-family: "Space Mono";
    
 }
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Space Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+    color: hsl(183, 100%, 15%); 
+    font-size: 14px;
+    margin: 60px 0 60px 0;
+    
+}
 
 .container{
     margin: auto;
@@ -20,9 +32,9 @@ form{
 }
 
 /*Left Container*/
-.container-l{
+/* .container-l{
 
-}
+} */
 
 .btn-select{
     display: flex; 
@@ -30,6 +42,14 @@ form{
     align-items: center; 
  
 }
+input{
+    outline: none; 
+    transition: border-color 0.3s;
+}
+input:focus{
+    border: 2px solid hsl(172, 67%, 45%); 
+}
+
 
 .btn-select button{
     border: 2px solid white;
@@ -47,11 +67,6 @@ form{
     background-color: hsl(189, 47%, 97%);
     color: hsl(183, 100%, 15%);
 
-}
-
-.btn-select button:active{
-    background-color: hsl(172, 67%, 45%); 
-    color: hsl(183, 100%, 15%);
 }
 
 .btn-select button.selected{
