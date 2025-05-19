@@ -28,6 +28,20 @@ customInput.addEventListener("input", function () {
   calculateTip();
 });
 
+ //Reset the tip and total
+form.addEventListener("reset", function () {
+  customBtn.style.display = "inline-block";
+  customInput.style.display = "none";
+
+  tipAmount.textContent = "$0.00";
+  total.textContent = "$0.00";
+  errorMsg.textContent = "";
+
+  selectedTipPercent = 0;
+
+  tipPercent.forEach(btn => btn.classList.remove("selected"));
+});
+
 //Select % tip
 for (var i = 0; i < tipPercent.length; i++) {
   tipPercent[i].addEventListener("click", function () {
@@ -67,17 +81,19 @@ function calculateTip() {
     }
     return;
   }
-
     // tip %
     let tip = bill * (selectedTipPercent / 100);
 
     //Tip per person
     let tipPerPerson = tip / people;
-    tipAmount.textContent = `$ ${tipPerPerson.toFixed(2)}`;
-    console.log("tipPerPerson2", tipPerPerson);
+    if(tipPerPerson!= 0){
+        tipAmount.textContent = `$ ${tipPerPerson.toFixed(2)}`;
+    }
 
     //Total per person
     totalPerPerson = (bill + tip) / people;
-    total.textContent = `$ ${totalPerPerson.toFixed(2)}`;
+    if(totalPerPerson != 0){
+       total.textContent = `$ ${totalPerPerson.toFixed(2)}`;
+    }
   }
 
