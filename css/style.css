@@ -1,15 +1,14 @@
 body{
     background-color: hsl(185, 41%, 84%);
-    font-family: "Space Mono";
+    font-family: "Space Mono", monospace;
+    font-style: normal;
    
 }
 h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Space Mono", monospace;
     font-weight: 600;
-    font-style: normal;
     color: hsl(183, 100%, 15%); 
     font-size: 14px;
     margin: 60px 0 60px 0;
@@ -40,6 +39,7 @@ form{
     display: flex; 
     justify-content: center;
     align-items: center; 
+    font-size: 12px;
  
 }
 input{
@@ -58,9 +58,7 @@ input:focus{
     height: 25px;
     background-color: hsl(183, 100%, 15%); 
     color: white; font-size: 14px; 
-    font-family: "Space Mono", monospace;
     font-weight: 700;
-    font-style: normal;
 }
 
 .btn-select button:hover{
@@ -80,7 +78,14 @@ input{
     height: 35px;
     width: 300px;
 }
-
+p{
+   color:  hsl(183, 100%, 15%);
+   font-weight: 500;
+   font-size: 18px;
+}
+p span{
+    font-weight: 600;
+}
 /*Right Container*/
 .container-r{
     display: flex;
@@ -96,16 +101,18 @@ input{
 .info-title span{
     font-size: 12px;
     color:hsl(185, 41%, 84%);
+    font-weight: 500;
 }
 
 .info-value{
     font-size: 30px; 
     color: hsl(172, 67%, 45%); 
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .info-title{
     color: hsl(0, 100%, 100%) ;
+    font-weight: 600;
 }
 
 .btn-reset{
@@ -114,4 +121,8 @@ input{
     background-color: hsl(172, 67%, 45%);
     border: 1px solid hsl(172, 67%, 45%); 
     border-radius: 5px; 
+    color: hsl(183, 100%, 15%); 
+    font-family: "Space Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
 }
