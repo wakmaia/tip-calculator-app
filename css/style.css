@@ -79,8 +79,8 @@ input{
     width: 300px;
 }
 p{
-   color:  hsl(183, 100%, 15%);
-   font-weight: 500;
+   color: hsl(172, 67%, 45%);
+   font-weight: 700;
    font-size: 18px;
 }
 p span{
@@ -95,7 +95,6 @@ p span{
     width: 400px;
     height: 300;
     margin: 10px -80px 0 20px;
-    
 }
 
 .info-title span{
